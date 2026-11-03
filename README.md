@@ -1,5 +1,7 @@
 # Chicago Regimentals 无可动实枪上新监控
 
+[![Monitor](https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/actions/workflows/monitor.yml/badge.svg)](https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/actions/workflows/monitor.yml)
+
 监控日本 Chicago Regimentals 官方网站「商品一覧 → 無可動実銃」，按「発売日」倒序检查。仅用于已永久去除发射功能的收藏装饰品信息；不监控附登记证的可作动古式枪、模型或配件。
 
 ## 运行与通知
@@ -10,7 +12,7 @@
 - 首次扫描分类的全部分页，保存静默基线，不把现有商品当新品推送。之后每轮读前3页，针对新候选读取商品详情。
 - 新品必须有独立商品编号、官方商品链接、含税日元价格、分店、发布日期及无可动分类证据。比基线最大编号更高、发布日期在最近14天内、首次出现的合格商品才自动通知。
 - 低编号新出现条目、缺少资料或无法确认的商品进入 `needs_review`，保持静默。这种保守规则可能漏报，不能代表库存、进货量或销量。
-- 每个确认新品由 `github-actions[bot]` 创建一条 Issue 并指派、提及仓库所有者，通过 GitHub 的通知邮件投递到账号配置的 Gmail。无需 Gmail 密码、SMTP 密钥、Telegram 或额外发信服务。
+- 每个确认新品由 `github-actions[bot]` 创建一条 Issue 并提及仓库所有者，通过 GitHub 的通知邮件投递到账号配置的 Gmail。无需 Gmail 密码、SMTP 密钥、Telegram 或额外发信服务。
 - 部署测试使用明确标注的测试 Issue，不能当作实际新品。
 - 无新品不发报告；异常显示为 Actions 失败，不作为“没有上新”。
 
@@ -45,4 +47,4 @@ python watcher.py --dry-run
 
 `--dry-run` 不写状态、不发通知。首次正式运行应在 Actions 日志看到 `Silent baseline:`，并有成功的状态提交。测试邮件是否送达须在 Gmail 中独立验证；单看 Issue 创建成功不能证明邮件已投递。
 
-网站结构变动需要修订解析器。通知渠道依赖 GitHub 参与/提及通知启用 Email，以及 GitHub 账号通知邮箱正确；禁用这些通知会停止邮件。未来如需更换频率、运行时段或邮件渠道，应修改工作流和相应设置。
+网站结构变动需要修订解析器。通知渠道依赖 GitHub 提及通知启用 Email，以及 GitHub 账号通知邮箱正确；禁用这些通知会停止邮件。未来如需更换频率、运行时段或邮件渠道，应修改工作流和相应设置。

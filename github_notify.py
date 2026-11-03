@@ -1,4 +1,4 @@
-"""Send owner-assigned GitHub Issues; GitHub delivers notification emails.
+"""Send owner-mentioned GitHub Issues; GitHub delivers notification emails.
 
 No Gmail credentials are needed. Delivery depends on the recipient's GitHub
 notification settings and verified notification email, and is tested separately.
@@ -122,7 +122,9 @@ class GitHubNotifier:
         existing = self._find(marker)
         if existing:
             return existing
-        payload = {"title": title[:240], "body": body + "\n\n" + marker, "assignees": [self.notify_user]}
+        # Mention once without also assigning: GitHub sends separate assignment
+        # and mention emails when both notification reasons are requested.
+        payload = {"title": title[:240], "body": body + "\n\n" + marker}
         try:
             response = self._request("post", json=payload)
         except requests.RequestException:
@@ -175,7 +177,7 @@ class GitHubNotifier:
         )
         return self._send(title, body, self._marker("sku", str(product["sku"])))
 
-    def send_test(self, test_id: str = "deployment-v1") -> str:
+    def send_test(self, test_id: str = "deployment-v2") -> str:
         if not isinstance(test_id, str) or not test_id.strip():
             raise NotifyError("Deployment test ID is required")
         body = (

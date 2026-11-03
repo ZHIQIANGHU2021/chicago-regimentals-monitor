@@ -55,13 +55,13 @@ class GitHubNotifierTests(unittest.TestCase):
         self.assertNotIn("secret-token", str(error.exception))
         self.assertEqual(self.session.post.call_count, 1)
 
-    def test_success_assigns_and_mentions_owner(self):
+    def test_success_only_mentions_owner_once(self):
         self.session.get.return_value = response(data=[])
         self.session.post.return_value = response(201, self.issue(9))
         self.assertTrue(self.notifier.send_product(self.product).endswith("/9"))
         args = self.session.post.call_args.kwargs
-        self.assertEqual(args["json"]["assignees"], ["owner"])
-        self.assertIn("@owner", args["json"]["body"])
+        self.assertNotIn("assignees", args["json"])
+        self.assertEqual(args["json"]["body"].count("@owner"), 1)
         self.assertIn("¥100,000", args["json"]["body"])
         self.assertFalse(args["allow_redirects"])
 
@@ -71,7 +71,7 @@ class GitHubNotifierTests(unittest.TestCase):
         self.notifier.send_test()
         payload = self.session.post.call_args.kwargs["json"]
         self.assertIn("不是新品通知", payload["body"])
-        self.assertIn(self.notifier._marker("test", "deployment-v1"), payload["body"])
+        self.assertIn(self.notifier._marker("test", "deployment-v2"), payload["body"])
 
     def test_rate_limit_does_not_post(self):
         self.session.get.return_value = response(429, {}, {"Retry-After": "120"})
