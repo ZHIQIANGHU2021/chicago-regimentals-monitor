@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "initialized": false,
+  "baseline_at": null,
+  "baseline_max_sku": null,
+  "seen": {},
+  "pending": {},
+  "outbox": {},
+  "notified": {},
+  "last_success_heartbeat": null
+}
