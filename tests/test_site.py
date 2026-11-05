@@ -33,6 +33,33 @@ class OfficialHtmlTests(unittest.TestCase):
         no_evidence = DETAIL.replace("日本国内の基準に準じた加工が施された無可動実銃です", "装飾品です")
         self.assertEqual(parse_detail(no_evidence, self.product).reason, "missing_deactivation_evidence")
 
+    def test_real_vz37_date_only_release_is_eligible_without_invented_time(self):
+        # SKU 10397's official 発売日 was 2026/11/04, without a time.
+        # Reuse sanitized structure while retaining the actual identifying
+        # fields, price, branch, status and deactivation disclaimer.
+        html = (DETAIL.replace("10379", "10397")
+                .replace("フィンランド マキシム M/09-21 重機関銃 (#64387)", "Vz.37 重機関銃 (#1436)")
+                .replace("2026/11/02 19:15:00", "2026/11/04")
+                .replace("￥440,000", "￥550,000")
+                .replace("￥400,000", "￥500,000"))
+        listing = replace(self.product, sku="10397", title="Vz.37 重機関銃 (#1436)",
+                          url="https://www.regimentals.jp/shop/g/g10397/")
+        product = parse_detail(html, listing)
+        self.assertTrue(product.eligible)
+        self.assertEqual(product.reason, "verified")
+        self.assertEqual(product.release_date, "2026-11-04")
+        self.assertEqual(product.price_jpy, 550000)
+        self.assertEqual(product.branch, "東京店")
+        self.assertEqual(product.status, "お客様ご連絡中")
+
+    def test_malformed_and_impossible_release_dates_remain_held(self):
+        for invalid in ("2026/11", "2026/02/30", "2026/11/04 25:00:00", "未定"):
+            with self.subTest(release=invalid):
+                product = parse_detail(DETAIL.replace("2026/11/02 19:15:00", invalid), self.product)
+                self.assertFalse(product.eligible)
+                self.assertEqual(product.reason, "missing_release_date")
+                self.assertIsNone(product.release_date)
+
     def test_changed_sort_category_and_page_fail(self):
         for html in (
             CATEGORY.replace('<dd class="active">発売日</dd>', '<dd class="active">商品名</dd>'),

@@ -93,6 +93,33 @@ class WatcherTests(unittest.TestCase):
         self.assertIn('101', second['outbox'])
         self.assertNotIn('101', second['pending'])
 
+    def test_existing_vz37_pending_recovers_when_date_only_release_is_parsed(self):
+        state = baseline()
+        state['baseline_max_sku'] = 10396
+        first_seen = '2026-11-04T11:13:25+00:00'
+        held = product('10397', title='Vz.37 重機関銃 #1436',
+                       release_date=None, eligible=False, reason='missing_release_date')
+        state['seen']['10397'] = first_seen
+        state['pending']['10397'] = {
+            'product': held, 'reason': 'missing_release_date', 'first_seen': first_seen}
+        state['notified']['10390'] = {'issue_url': 'https://github.com/a/b/issues/4'}
+        prior_notified = copy.deepcopy(state['notified'])
+        prior_baseline = (state['baseline_at'], state['baseline_max_sku'])
+        site = Mock()
+        site.scan.return_value = [held]
+        site.detail.return_value = product('10397', title='Vz.37 重機関銃 #1436',
+                                           release_date='2026-11-04')
+        run_at = datetime(2026, 11, 5, 1, 0, tzinfo=timezone.utc)
+        recovered = watcher.scan_state(state, site, run_at)
+        self.assertEqual(set(recovered['outbox']), {'10397'})
+        self.assertNotIn('10397', recovered['pending'])
+        self.assertEqual(recovered['seen']['10397'], first_seen)
+        self.assertEqual(recovered['notified'], prior_notified)
+        self.assertEqual((recovered['baseline_at'], recovered['baseline_max_sku']), prior_baseline)
+        repeated = watcher.scan_state(recovered, site, run_at + timedelta(minutes=5))
+        self.assertEqual(repeated['outbox'], recovered['outbox'])
+        site.detail.assert_called_once()
+
     def test_notified_sku_and_pending_outbox_are_not_reprocessed(self):
         state = baseline()
         state['notified']['101'] = {'issue_url': 'https://github.com/a/b/issues/1'}

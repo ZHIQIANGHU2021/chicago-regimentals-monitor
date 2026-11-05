@@ -182,10 +182,17 @@ def parse_detail(html: str, product: Product) -> Product:
         description,
     )
     release = _text(soup.select_one("#spec_release_dt"))
-    try:
-        release_date = datetime.strptime(release, "%Y/%m/%d %H:%M:%S").isoformat()
-    except ValueError:
-        release_date = None
+    release_date = None
+    # Official pages use both timestamps and date-only values (e.g. SKU
+    # 10397 on 2026-11-04). Preserve the precision actually published.
+    for date_format in ("%Y/%m/%d %H:%M:%S", "%Y/%m/%d"):
+        try:
+            parsed_release = datetime.strptime(release, date_format)
+        except ValueError:
+            continue
+        release_date = (parsed_release.date().isoformat() if date_format == "%Y/%m/%d"
+                        else parsed_release.isoformat())
+        break
     branch = _branch(_text(soup.select_one("#spec_variation_name2")))
     price = _price(soup.select_one(".block-goods-price--price"))
     # The website's gross price is followed by a separately labelled net price.
