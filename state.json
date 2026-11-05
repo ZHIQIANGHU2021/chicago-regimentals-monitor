@@ -7,23 +7,13 @@
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
       "notified_at": "2026-11-05T01:38:00+00:00"
-    }
-  },
-  "outbox": {
+    },
     "10398": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-05T14:03:23+00:00",
-      "eligible": true,
-      "price_jpy": 550000,
-      "reason": "verified",
-      "release_date": "2026-11-05T19:30:00",
-      "sku": "10398",
-      "status": "商談中",
-      "title": "ウィンチェスター M70 XTR ライフル (#G1460328)",
-      "url": "https://www.regimentals.jp/shop/g/g10398/"
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/4",
+      "notified_at": "2026-11-05T14:03:32+00:00"
     }
   },
+  "outbox": {},
   "pending": {},
   "seen": {
     "10000": "2026-11-03T03:26:51+00:00",
