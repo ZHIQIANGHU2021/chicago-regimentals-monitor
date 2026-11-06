@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-06T08:29:14+00:00",
+  "last_success_heartbeat": "2026-11-06T16:11:35+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -13,7 +13,21 @@
       "notified_at": "2026-11-05T14:03:32+00:00"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "10399": {
+      "branch": "東京店",
+      "category": "無可動実銃",
+      "detected_at": "2026-11-06T16:11:35+00:00",
+      "eligible": true,
+      "price_jpy": 330000,
+      "reason": "verified",
+      "release_date": "2026-11-06T17:40:00",
+      "sku": "10399",
+      "status": "商談中",
+      "title": "AK-47 自動小銃 III型 (#6467)",
+      "url": "https://www.regimentals.jp/shop/g/g10399/"
+    }
+  },
   "pending": {},
   "seen": {
     "10000": "2026-11-03T03:26:51+00:00",
@@ -168,6 +182,7 @@
     "10396": "2026-11-03T03:26:51+00:00",
     "10397": "2026-11-04T11:13:25+00:00",
     "10398": "2026-11-05T14:03:23+00:00",
+    "10399": "2026-11-06T16:11:35+00:00",
     "1297": "2026-11-03T03:26:51+00:00",
     "1389": "2026-11-03T03:26:51+00:00",
     "1445": "2026-11-03T03:26:51+00:00",
