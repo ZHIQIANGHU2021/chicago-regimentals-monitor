@@ -4,3 +4,4 @@ __pycache__/
 .env
 state.json.tmp
 .deps/
+apps_script/*.local.*
