@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-07T07:10:21+00:00",
+  "last_success_heartbeat": "2026-11-07T14:02:40+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -17,7 +17,21 @@
       "notified_at": "2026-11-06T16:11:43+00:00"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "10403": {
+      "branch": "東京店",
+      "category": "無可動実銃",
+      "detected_at": "2026-11-07T14:02:40+00:00",
+      "eligible": true,
+      "price_jpy": 165000,
+      "reason": "verified",
+      "release_date": "2026-11-07T18:00:00",
+      "sku": "10403",
+      "status": "商談中",
+      "title": "モシンナガン M1938 騎兵銃 (#8159)",
+      "url": "https://www.regimentals.jp/shop/g/g10403/"
+    }
+  },
   "pending": {},
   "seen": {
     "10000": "2026-11-03T03:26:51+00:00",
@@ -173,6 +187,7 @@
     "10397": "2026-11-04T11:13:25+00:00",
     "10398": "2026-11-05T14:03:23+00:00",
     "10399": "2026-11-06T16:11:35+00:00",
+    "10403": "2026-11-07T14:02:40+00:00",
     "1297": "2026-11-03T03:26:51+00:00",
     "1389": "2026-11-03T03:26:51+00:00",
     "1445": "2026-11-03T03:26:51+00:00",
