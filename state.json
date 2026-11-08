@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-08T07:57:21+00:00",
+  "last_success_heartbeat": "2026-11-08T14:56:14+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -22,7 +22,24 @@
     }
   },
   "outbox": {},
-  "pending": {},
+  "pending": {
+    "8527": {
+      "first_seen": "2026-11-08T14:56:14+00:00",
+      "product": {
+        "branch": "東京店",
+        "category": "無可動実銃",
+        "eligible": false,
+        "price_jpy": 143000,
+        "reason": "detail_not_checked",
+        "release_date": null,
+        "sku": "8527",
+        "status": "在庫あり",
+        "title": "ポーランド PPS43 短機関銃 (#H-14433)",
+        "url": "https://www.regimentals.jp/shop/g/g8527/"
+      },
+      "reason": "old_sku_needs_official_new_arrival_evidence"
+    }
+  },
   "seen": {
     "10000": "2026-11-03T03:26:51+00:00",
     "10005": "2026-11-03T03:26:51+00:00",
@@ -414,6 +431,7 @@
     "8520": "2026-11-03T03:26:51+00:00",
     "8524": "2026-11-03T03:26:51+00:00",
     "8525": "2026-11-03T03:26:51+00:00",
+    "8527": "2026-11-08T14:56:14+00:00",
     "8534": "2026-11-03T03:26:51+00:00",
     "8541": "2026-11-03T03:26:51+00:00",
     "8542": "2026-11-03T03:26:51+00:00",
