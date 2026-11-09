@@ -16,39 +16,20 @@
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/5",
       "notified_at": "2026-11-06T16:11:43+00:00"
     },
+    "10400": {
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/7",
+      "notified_at": "2026-11-09T10:18:57+00:00"
+    },
+    "10402": {
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/8",
+      "notified_at": "2026-11-09T10:18:58+00:00"
+    },
     "10403": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/6",
       "notified_at": "2026-11-07T14:02:46+00:00"
     }
   },
-  "outbox": {
-    "10400": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-09T10:18:50+00:00",
-      "eligible": true,
-      "price_jpy": 330000,
-      "reason": "verified",
-      "release_date": "2026-11-09",
-      "sku": "10400",
-      "status": "在庫あり",
-      "title": "トカレフ SVT 1940 自動小銃 (#5079)",
-      "url": "https://www.regimentals.jp/shop/g/g10400/"
-    },
-    "10402": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-09T10:18:50+00:00",
-      "eligible": true,
-      "price_jpy": 165000,
-      "reason": "verified",
-      "release_date": "2026-11-09",
-      "sku": "10402",
-      "status": "在庫あり",
-      "title": "M136 AT4 対戦車ランチャー",
-      "url": "https://www.regimentals.jp/shop/g/g10402/"
-    }
-  },
+  "outbox": {},
   "pending": {
     "8527": {
       "first_seen": "2026-11-08T14:56:14+00:00",
