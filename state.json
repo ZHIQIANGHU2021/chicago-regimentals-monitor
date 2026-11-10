@@ -35,23 +35,13 @@
     "10404": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/10",
       "notified_at": "2026-11-09T20:52:51+00:00"
-    }
-  },
-  "outbox": {
+    },
     "10405": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-10T11:04:20+00:00",
-      "eligible": true,
-      "price_jpy": 330000,
-      "reason": "verified",
-      "release_date": "2026-11-10",
-      "sku": "10405",
-      "status": "在庫あり",
-      "title": "村田型散弾銃 (#1228)",
-      "url": "https://www.regimentals.jp/shop/g/g10405/"
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/11",
+      "notified_at": "2026-11-10T11:04:27+00:00"
     }
   },
+  "outbox": {},
   "pending": {
     "8527": {
       "first_seen": "2026-11-08T14:56:14+00:00",
