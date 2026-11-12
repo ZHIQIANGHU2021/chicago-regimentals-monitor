@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-12T07:55:02+00:00",
+  "last_success_heartbeat": "2026-11-12T16:37:22+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -41,7 +41,21 @@
       "notified_at": "2026-11-10T11:04:27+00:00"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "10407": {
+      "branch": "東京店",
+      "category": "無可動実銃",
+      "detected_at": "2026-11-12T16:37:22+00:00",
+      "eligible": true,
+      "price_jpy": 99000,
+      "reason": "verified",
+      "release_date": "2026-11-12T17:00:00",
+      "sku": "10407",
+      "status": "在庫あり",
+      "title": "US M72A2 66mm LAW ロケット・ランチャー",
+      "url": "https://www.regimentals.jp/shop/g/g10407/"
+    }
+  },
   "pending": {
     "7474": {
       "first_seen": "2026-11-11T10:53:25+00:00",
@@ -236,6 +250,7 @@
     "10403": "2026-11-07T14:02:40+00:00",
     "10404": "2026-11-09T20:52:42+00:00",
     "10405": "2026-11-10T11:04:20+00:00",
+    "10407": "2026-11-12T16:37:22+00:00",
     "1297": "2026-11-03T03:26:51+00:00",
     "1389": "2026-11-03T03:26:51+00:00",
     "1445": "2026-11-03T03:26:51+00:00",
