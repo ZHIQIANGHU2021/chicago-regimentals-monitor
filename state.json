@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-13T02:50:22+00:00",
+  "last_success_heartbeat": "2026-11-13T10:11:03+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -47,6 +47,22 @@
   },
   "outbox": {},
   "pending": {
+    "3052": {
+      "first_seen": "2026-11-13T10:11:03+00:00",
+      "product": {
+        "branch": "東京店",
+        "category": "無可動実銃",
+        "eligible": false,
+        "price_jpy": 550000,
+        "reason": "detail_not_checked",
+        "release_date": null,
+        "sku": "3052",
+        "status": "商談中",
+        "title": "Vz.37 重機関銃 (#6396)",
+        "url": "https://www.regimentals.jp/shop/g/g3052/"
+      },
+      "reason": "old_sku_needs_official_new_arrival_evidence"
+    },
     "7474": {
       "first_seen": "2026-11-11T10:53:25+00:00",
       "product": {
@@ -57,7 +73,7 @@
         "reason": "detail_not_checked",
         "release_date": null,
         "sku": "7474",
-        "status": "商談中",
+        "status": "在庫あり",
         "title": "M1 ガーランド ライフル (#5107336)",
         "url": "https://www.regimentals.jp/shop/g/g7474/"
       },
@@ -283,6 +299,7 @@
     "2989": "2026-11-03T03:26:51+00:00",
     "3002": "2026-11-03T03:26:51+00:00",
     "3005": "2026-11-03T03:26:51+00:00",
+    "3052": "2026-11-13T10:11:03+00:00",
     "3157": "2026-11-03T03:26:51+00:00",
     "3171": "2026-11-03T03:26:51+00:00",
     "3174": "2026-11-03T03:26:51+00:00",
