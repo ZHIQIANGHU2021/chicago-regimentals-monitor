@@ -47,23 +47,13 @@
     "10407": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/12",
       "notified_at": "2026-11-12T16:37:29+00:00"
-    }
-  },
-  "outbox": {
+    },
     "10409": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-18T12:20:58+00:00",
-      "eligible": true,
-      "price_jpy": 330000,
-      "reason": "verified",
-      "release_date": "2026-11-18",
-      "sku": "10409",
-      "status": "商談中",
-      "title": "M1 ガーランド ライフル (#345913)",
-      "url": "https://www.regimentals.jp/shop/g/g10409/"
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/14",
+      "notified_at": "2026-11-18T12:21:05+00:00"
     }
   },
+  "outbox": {},
   "pending": {
     "3052": {
       "first_seen": "2026-11-13T10:11:03+00:00",
