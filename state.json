@@ -51,23 +51,13 @@
     "10409": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/14",
       "notified_at": "2026-11-18T12:21:05+00:00"
-    }
-  },
-  "outbox": {
+    },
     "10411": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-19T10:14:19+00:00",
-      "eligible": true,
-      "price_jpy": 396000,
-      "reason": "verified",
-      "release_date": "2026-11-19T17:00:00",
-      "sku": "10411",
-      "status": "商談中",
-      "title": "Kar.98k 小銃 (#2727d)",
-      "url": "https://www.regimentals.jp/shop/g/g10411/"
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/15",
+      "notified_at": "2026-11-19T10:14:26+00:00"
     }
   },
+  "outbox": {},
   "pending": {
     "3052": {
       "first_seen": "2026-11-13T10:11:03+00:00",
