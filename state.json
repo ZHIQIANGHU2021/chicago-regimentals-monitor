@@ -52,26 +52,16 @@
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/14",
       "notified_at": "2026-11-18T12:21:05+00:00"
     },
+    "10410": {
+      "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/16",
+      "notified_at": "2026-11-20T08:37:55+00:00"
+    },
     "10411": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/15",
       "notified_at": "2026-11-19T10:14:26+00:00"
     }
   },
-  "outbox": {
-    "10410": {
-      "branch": "東京店",
-      "category": "無可動実銃",
-      "detected_at": "2026-11-20T08:37:48+00:00",
-      "eligible": true,
-      "price_jpy": 990000,
-      "reason": "verified",
-      "release_date": "2026-11-20",
-      "sku": "10410",
-      "status": "商談中",
-      "title": "FNC 自動小銃 (前期型、#004058)",
-      "url": "https://www.regimentals.jp/shop/g/g10410/"
-    }
-  },
+  "outbox": {},
   "pending": {
     "3052": {
       "first_seen": "2026-11-13T10:11:03+00:00",
