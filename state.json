@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-21T03:59:55+00:00",
+  "last_success_heartbeat": "2026-11-21T12:28:27+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -61,7 +61,21 @@
       "notified_at": "2026-11-19T10:14:26+00:00"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "10412": {
+      "branch": "東京店",
+      "category": "無可動実銃",
+      "detected_at": "2026-11-21T12:28:27+00:00",
+      "eligible": true,
+      "price_jpy": 440000,
+      "reason": "verified",
+      "release_date": "2026-11-21T16:00:00",
+      "sku": "10412",
+      "status": "在庫あり",
+      "title": "MP40 短機関銃 (#556k/556k, bnz 42)",
+      "url": "https://www.regimentals.jp/shop/g/g10412/"
+    }
+  },
   "pending": {
     "3052": {
       "first_seen": "2026-11-13T10:11:03+00:00",
@@ -277,6 +291,7 @@
     "10409": "2026-11-18T12:20:58+00:00",
     "10410": "2026-11-20T08:37:48+00:00",
     "10411": "2026-11-19T10:14:19+00:00",
+    "10412": "2026-11-21T12:28:27+00:00",
     "1297": "2026-11-03T03:26:51+00:00",
     "1389": "2026-11-03T03:26:51+00:00",
     "1445": "2026-11-03T03:26:51+00:00",
