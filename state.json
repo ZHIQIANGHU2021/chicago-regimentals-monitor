@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-25T00:53:23+00:00",
+  "last_success_heartbeat": "2026-11-25T09:28:45+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -84,6 +84,22 @@
         "status": "在庫あり",
         "title": "Vz.37 重機関銃 (#6396)",
         "url": "https://www.regimentals.jp/shop/g/g3052/"
+      },
+      "reason": "old_sku_needs_official_new_arrival_evidence"
+    },
+    "3836": {
+      "first_seen": "2026-11-25T09:28:45+00:00",
+      "product": {
+        "branch": "東京店",
+        "category": "無可動実銃",
+        "eligible": false,
+        "price_jpy": 715000,
+        "reason": "detail_not_checked",
+        "release_date": null,
+        "sku": "3836",
+        "status": "商談中",
+        "title": "CZ 805 BREN A2 自動小銃 (#B393707)",
+        "url": "https://www.regimentals.jp/shop/g/g3836/"
       },
       "reason": "old_sku_needs_official_new_arrival_evidence"
     },
@@ -350,6 +366,7 @@
     "371": "2026-11-03T03:26:51+00:00",
     "3710": "2026-11-03T03:26:51+00:00",
     "3748": "2026-11-03T03:26:51+00:00",
+    "3836": "2026-11-25T09:28:45+00:00",
     "3840": "2026-11-03T03:26:51+00:00",
     "3857": "2026-11-03T03:26:51+00:00",
     "388": "2026-11-03T03:26:51+00:00",
