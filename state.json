@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-26T02:25:57+00:00",
+  "last_success_heartbeat": "2026-11-26T11:21:18+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -69,7 +69,21 @@
       "notified_at": "2026-11-22T06:19:45+00:00"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "10414": {
+      "branch": "東京店",
+      "category": "無可動実銃",
+      "detected_at": "2026-11-26T11:21:18+00:00",
+      "eligible": true,
+      "price_jpy": 154000,
+      "reason": "verified",
+      "release_date": "2026-11-26",
+      "sku": "10414",
+      "status": "在庫あり",
+      "title": "AK-47 (ノリンコ) 自動小銃 (#00192)",
+      "url": "https://www.regimentals.jp/shop/g/g10414/"
+    }
+  },
   "pending": {
     "3052": {
       "first_seen": "2026-11-13T10:11:03+00:00",
@@ -303,6 +317,7 @@
     "10411": "2026-11-19T10:14:19+00:00",
     "10412": "2026-11-21T12:28:27+00:00",
     "10413": "2026-11-22T06:19:39+00:00",
+    "10414": "2026-11-26T11:21:18+00:00",
     "1297": "2026-11-03T03:26:51+00:00",
     "1389": "2026-11-03T03:26:51+00:00",
     "1445": "2026-11-03T03:26:51+00:00",
