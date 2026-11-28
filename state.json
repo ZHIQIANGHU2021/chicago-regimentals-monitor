@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-28T03:15:33+00:00",
+  "last_success_heartbeat": "2026-11-28T12:00:12+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -73,8 +73,38 @@
       "notified_at": "2026-11-26T11:21:25+00:00"
     }
   },
-  "outbox": {},
+  "outbox": {
+    "10408": {
+      "branch": "東京店",
+      "category": "無可動実銃",
+      "detected_at": "2026-11-28T12:00:12+00:00",
+      "eligible": true,
+      "price_jpy": 143000,
+      "reason": "verified",
+      "release_date": "2026-11-28",
+      "sku": "10408",
+      "status": "商談中",
+      "title": "US M1 カービン (#4787533)",
+      "url": "https://www.regimentals.jp/shop/g/g10408/"
+    }
+  },
   "pending": {
+    "10386": {
+      "first_seen": "2026-11-28T12:00:12+00:00",
+      "product": {
+        "branch": "東京店",
+        "category": "無可動実銃",
+        "eligible": false,
+        "price_jpy": 198000,
+        "reason": "detail_not_checked",
+        "release_date": null,
+        "sku": "10386",
+        "status": "在庫あり",
+        "title": "DP 軽機関銃 (後期型、#373)",
+        "url": "https://www.regimentals.jp/shop/g/g10386/"
+      },
+      "reason": "old_sku_needs_official_new_arrival_evidence"
+    },
     "1979": {
       "first_seen": "2026-11-28T03:15:33+00:00",
       "product": {
@@ -300,6 +330,7 @@
     "10381": "2026-11-03T03:26:51+00:00",
     "10382": "2026-11-03T03:26:51+00:00",
     "10383": "2026-11-03T03:26:51+00:00",
+    "10386": "2026-11-28T12:00:12+00:00",
     "10388": "2026-11-03T03:26:51+00:00",
     "10391": "2026-11-03T03:26:51+00:00",
     "10392": "2026-11-03T03:26:51+00:00",
@@ -318,6 +349,7 @@
     "10405": "2026-11-10T11:04:20+00:00",
     "10406": "2026-11-16T13:47:43+00:00",
     "10407": "2026-11-12T16:37:22+00:00",
+    "10408": "2026-11-28T12:00:12+00:00",
     "10409": "2026-11-18T12:20:58+00:00",
     "10410": "2026-11-20T08:37:48+00:00",
     "10411": "2026-11-19T10:14:19+00:00",
