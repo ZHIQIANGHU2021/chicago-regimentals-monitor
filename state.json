@@ -2,7 +2,7 @@
   "baseline_at": "2026-11-03T03:26:51+00:00",
   "baseline_max_sku": 10396,
   "initialized": true,
-  "last_success_heartbeat": "2026-11-27T21:04:01+00:00",
+  "last_success_heartbeat": "2026-11-28T03:15:33+00:00",
   "notified": {
     "10397": {
       "issue_url": "https://github.com/ZHIQIANGHU2021/chicago-regimentals-monitor/issues/3",
@@ -75,6 +75,22 @@
   },
   "outbox": {},
   "pending": {
+    "1979": {
+      "first_seen": "2026-11-28T03:15:33+00:00",
+      "product": {
+        "branch": "東京店",
+        "category": "無可動実銃",
+        "eligible": false,
+        "price_jpy": 253000,
+        "reason": "detail_not_checked",
+        "release_date": null,
+        "sku": "1979",
+        "status": "在庫あり",
+        "title": "トンプソン M1 短機関銃 (#110628)",
+        "url": "https://www.regimentals.jp/shop/g/g1979/"
+      },
+      "reason": "old_sku_needs_official_new_arrival_evidence"
+    },
     "3052": {
       "first_seen": "2026-11-13T10:11:03+00:00",
       "product": {
@@ -322,6 +338,7 @@
     "1786": "2026-11-03T03:26:51+00:00",
     "1891": "2026-11-03T03:26:51+00:00",
     "195": "2026-11-03T03:26:51+00:00",
+    "1979": "2026-11-28T03:15:33+00:00",
     "1980": "2026-11-03T03:26:51+00:00",
     "2031": "2026-11-03T03:26:51+00:00",
     "2109": "2026-11-03T03:26:51+00:00",
